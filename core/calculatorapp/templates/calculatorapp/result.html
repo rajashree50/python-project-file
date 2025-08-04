@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Result</title></head>
+    <body>
+        <h1>
+            Result
+        </h1>
+        {% if error %}
+        <p style ="color:red;">{{ error }}</p>
+        {% else %}
+        <p>Result:{{result}}</p>
+        {% endif %}
+        <a href="{% url 'home' %}">Go back</a>
+
+    </body>
+</html>
